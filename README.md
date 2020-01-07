@@ -1,5 +1,5 @@
 # building-permit-automation
-## Scripts to automate and enhance the LAMA query dataset for current building permits
+## Scripts to automate and enhance the LAMA query dataset for building permits
 
 ### Purpose
 Create a workflow to add 2d geographic data to the permits file 
@@ -9,9 +9,9 @@ The permits.csv file is created by a LAMA query multiple times per hour. The fil
 
 The Address file is created by an ODS call to the Town ArcGIS system to generate a list of all addresses within town limits. This file is downloaded from the chapelhillopendata.org site to a work area for intermediate processing.
 
-The Powershell script ```address_to_PIN_lookup.ps1``` script de-duplicates PIN entries and creates the ```PIN_lookup_sorted.csv``` file.
+The Powershell script ```address_to_PIN_lookup.ps1``` de-duplicates PIN entries and creates the ```PIN_lookup_sorted.csv``` file.
 
-```open_data_ftp_download``` retrieves the ```current permits.csv``` file for input.
+```open_data_ftp_download``` retrieves the current ```permits.csv``` file for input.
 
 ```update_permits``` creates the new ```building_permits.csv``` file, which is processed by ODS for the Building Permits dataset.
 
