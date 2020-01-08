@@ -17,7 +17,7 @@ delimiters = re.compile(r'-+|,')
 eol = re.compile(r'\n|\r')
 
 # build the filename
-pin_file = Path(filename_secrets.productionStaging, 'PIN_lookup_sorted.csv')
+pin_file = Path(filename_secrets.workfilesDirectory, 'PIN_lookup_sorted.csv')
 permits_file = Path(filename_secrets.productionStaging, 'permits.csv')
 updated_permits_file = Path(filename_secrets.productionStaging, 'building_permits.csv')
 

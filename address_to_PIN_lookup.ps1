@@ -11,9 +11,6 @@
   address_to_PIN_loopkup inputFile outputFile
 #>
 
-$args[0] = "c:\OpenData\testing\datasets\staging\addresses.csv"
-$args[1] = "C:\OpenData\testing\datasets\staging\PIN_lookup_sorted.csv"
-
 # Bypass script signing for this instance
 # Set-ExecutionPolicy -ExecutionPolicy ByPass -Scope CurrentUser -Force
 
