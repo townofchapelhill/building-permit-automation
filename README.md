@@ -9,6 +9,8 @@ The permits.csv file is created by a LAMA query multiple times per hour. The fil
 
 The Address file is created by an ODS call to the Town ArcGIS system to generate a list of all addresses within town limits. This file is downloaded from the chapelhillopendata.org site to a work area for intermediate processing.
 
+The Powershell script ```download_csv.ps1``` downloads the address file from ODS to use as the input to the PIN lookup table.
+
 The Powershell script ```address_to_PIN_lookup.ps1``` de-duplicates PIN entries and creates the ```PIN_lookup_sorted.csv``` file.
 
 ```open_data_ftp_download``` retrieves the current ```permits.csv``` file for input.
@@ -29,4 +31,3 @@ The Powershell script ```address_to_PIN_lookup.ps1``` de-duplicates PIN entries 
 #### permits.csv to building_permits.csv
 
 ### Constraints
-#### Download of the ```address.csv``` file is currently manual
