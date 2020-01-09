@@ -29,4 +29,3 @@ The Powershell script ```address_to_PIN_lookup.ps1``` de-duplicates PIN entries 
 #### permits.csv to building_permits.csv
 
 ### Constraints
-#### Download of the ```address.csv``` file is currently manual
